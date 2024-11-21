@@ -44,9 +44,9 @@ function lxlogin() {
             console.log("login：" + lpsutgt)
             resolve(lpsutgt);
         } catch (err) {
-            console.log(err.response);
             lpsutgt = null
             result += "登陆失败！ ||  "
+            console.log(result, err.response);
         }
         resolve();
     });
